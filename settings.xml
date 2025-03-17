@@ -11,23 +11,25 @@
     </servers>
 <profiles>
   <profile>
-    <id>default</id>
+    <id>vprofile-naha-vprofile-repo-test-naha</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
     <repositories>
       <repository>
-        <id>codeartifact</id>
-    <url>https://domain-accountid.d.codeartifact.region.amazonaws.com/maven/maven-central-store/</url>
+        <id>vprofile-naha-vprofile-repo-test-naha</id>
+        <url>https://vprofile-naha-920373033675.d.codeartifact.us-east-1.amazonaws.com/maven/vprofile-repo-test-naha/</url>
       </repository>
     </repositories>
   </profile>
-</profiles>
 <activeProfiles>
         <activeProfile>default</activeProfile>
-    </activeProfiles>
+</activeProfiles>
 <mirrors>
   <mirror>
-    <id>codeartifact</id>
-    <name>domainname--maven-central-store</name>
-    <url>https://domain-accountdid.d.codeartifact.region.amazonaws.com/maven/maven-central-store/</url>
+    <id>vprofile-naha-vprofile-repo-test-naha</id>
+    <name>vprofile-naha-vprofile-repo-test-naha</name>
+    <url>https://vprofile-naha-920373033675.d.codeartifact.us-east-1.amazonaws.com/maven/vprofile-repo-test-naha/</url>
     <mirrorOf>*</mirrorOf>
   </mirror>
 </mirrors>
