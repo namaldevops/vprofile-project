@@ -22,6 +22,7 @@
       </repository>
     </repositories>
   </profile>
+</profile>
 <activeProfiles>
         <activeProfile>default</activeProfile>
 </activeProfiles>
