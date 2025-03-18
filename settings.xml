@@ -24,7 +24,7 @@
   </profile>
 </profiles>
 <activeProfiles>
-        <activeProfile>default</activeProfile>
+        <activeProfile>vprofile-naha-vprofile-repo-test-naha</activeProfile>
 </activeProfiles>
 <mirrors>
   <mirror>
