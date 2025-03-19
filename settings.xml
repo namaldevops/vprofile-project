@@ -2,23 +2,23 @@
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
-  <servers>
-        <server>
-            <id>codeartifact</id>
-            <username>aws</username>
-            <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
-        </server>
-    </servers>
+<servers>
+  <server>
+    <id>vprofile-naha-maven-central-store</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
 <profiles>
   <profile>
-    <id>vprofile-naha-vprofile-repo-test-naha</id>
+    <id>vprofile-naha-maven-central-store</id>
     <activation>
       <activeByDefault>true</activeByDefault>
     </activation>
     <repositories>
       <repository>
-        <id>vprofile-naha-vprofile-repo-test-naha</id>
-        <url>https://vprofile-naha-920373033675.d.codeartifact.us-east-1.amazonaws.com/maven/vprofile-repo-test-naha/</url>
+        <id>vprofile-naha-maven-central-store</id>
+        <url>https://vprofile-naha-920373033675.d.codeartifact.us-east-1.amazonaws.com/maven/maven-central-store/</url>
       </repository>
     </repositories>
   </profile>
@@ -28,9 +28,9 @@
 </activeProfiles>
 <mirrors>
   <mirror>
-    <id>vprofile-naha-vprofile-repo-test-naha</id>
-    <name>vprofile-naha-vprofile-repo-test-naha</name>
-    <url>https://vprofile-naha-920373033675.d.codeartifact.us-east-1.amazonaws.com/maven/vprofile-repo-test-naha/</url>
+    <id>vprofile-naha-maven-central-store</id>
+    <name>vprofile-naha-maven-central-store</name>
+    <url>https://vprofile-naha-920373033675.d.codeartifact.us-east-1.amazonaws.com/maven/maven-central-store/</url>
     <mirrorOf>*</mirrorOf>
   </mirror>
 </mirrors>
